@@ -404,9 +404,8 @@ class _SuggestionsListState<T> extends State<SuggestionsList<T>>
         final suggestion = this._suggestions!.elementAt(index);
         final focusNode = _focusNodes[index];
         return TextFieldTapRegion(
-          child: InkWell(
-            focusColor: Theme.of(context).hoverColor,
-            focusNode: focusNode,
+          child: GestureDetector(
+            
             child: widget.itemBuilder!(context, suggestion),
             onTap: () {
               // * we give the focus back to the text field
