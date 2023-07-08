@@ -314,8 +314,8 @@ class _SuggestionsListState<T> extends State<SuggestionsList<T>>
     var container = PointerInterceptor(
       intercepting: widget.intercepting,
                 child: Material(
+                  type: MaterialType.transparency,
       elevation: widget.decoration!.elevation,
-      color: widget.decoration!.color,
       shape: widget.decoration!.shape,
       borderRadius: widget.decoration!.borderRadius,
       shadowColor: widget.decoration!.shadowColor,
